@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: int
         """
         total=sum(nums)
-        sumleft=1-1
+        sumleft=0
         n=len(nums)
         for i in range(0,n):
             sumright = total-sumleft-nums[i]
