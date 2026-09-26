@@ -5,11 +5,12 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        
-        n = len(nums)
+        n= len(nums)
+      
         dictnry= {}
         for i in range(0,n):
             remaining = target-nums[i]
             if remaining in dictnry:
               return [dictnry[remaining],i]
             dictnry[nums[i]] = i
+      
